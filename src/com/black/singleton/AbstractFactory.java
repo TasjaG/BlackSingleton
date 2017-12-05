@@ -2,6 +2,7 @@ package com.black.singleton;
 
 import com.black.singleton.BaseFactory;
 
+// class made by Anastasiia Hryhorieva, comment added before commit #2
 public class AbstractFactory {
 
     public static BaseFactory getFactory(String string) throws IllegalColorException {
