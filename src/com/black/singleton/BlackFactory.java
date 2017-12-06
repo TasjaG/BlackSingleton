@@ -1,8 +1,6 @@
 package com.black.singleton;
 
-/**
- * Created by ������������� on 05.12.2017.
- */
+
 public class BlackFactory extends BaseFactory {
 
 

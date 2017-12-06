@@ -6,11 +6,11 @@ package com.black.singleton;
 public class WhiteTriangle extends Triangle {
 
     public WhiteTriangle(Point a, Point b, Point c) {
-        super(a,b,c);
+        super(a, b, c);
     }
 
     @Override
     public String toString() {
-        return "WhiteTriangle{}";
+        return "WhiteTriangle";
     }
 }

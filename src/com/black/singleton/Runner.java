@@ -7,7 +7,6 @@ public class Runner {
         try {
             blackFactory = AbstractFactory.getFactory("black");
             writeFactory = AbstractFactory.getFactory("white");
-
         } catch (IllegalColorException e) {
             e.printStackTrace();
         }

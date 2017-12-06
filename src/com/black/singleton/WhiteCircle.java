@@ -8,7 +8,10 @@ public class WhiteCircle extends Circle {
         super(centre, radius);
     }
 
-
+    @Override
+    public String toString() {
+        return "WhiteCircle";
+    }
 
 }
 
