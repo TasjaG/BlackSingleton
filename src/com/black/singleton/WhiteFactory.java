@@ -5,7 +5,7 @@ package com.black.singleton;
  */
 public class WhiteFactory extends BaseFactory {
     Circle createCircle(Point p, int radius) {
-        return new com.black.singleton.WhiteCircle(p, radius);
+        return new WhiteCircle(p, radius);
     }
 
     Triangle createTriangle(Point p1, Point p2, Point p3) {
