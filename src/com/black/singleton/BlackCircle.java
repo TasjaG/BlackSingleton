@@ -1,13 +1,17 @@
 package com.black.singleton;
 
-
-public class BlackCircle extends Circle {
-    public BlackCircle(Point a, int radius) {
-        super(a, radius);
+class BlackCircle extends Circle {
+    BlackCircle(Point center, int radius) {
+        super(center, radius);
     }
 
-//    @Override
-//    public String toString() {
-//        return "BlackCircle";
-//    }
+    @Override
+    public String toString() {
+        return "Black circle{" +
+                "center = " + getCenter() +
+                ", radius = " + getRadius() +
+                ", color = '" + getColor() + '\'' +
+                ", square = " + square() +
+                '}';
+    }
 }

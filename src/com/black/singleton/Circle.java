@@ -1,17 +1,38 @@
 package com.black.singleton;
 
-public abstract class Circle extends Shape{
-    private Point a;
-    private int radius;
-    private String name;
+import static java.lang.Math.PI;
+import static java.lang.Math.pow;
 
-    public Circle(Point a, int radius) {
-        this.a = a;
+abstract class Circle {
+    private Point center;
+    private int radius;
+    private String color;
+
+    Circle(Point center, int radius) {
+        if (radius <= 0) {
+            throw new IllegalArgumentException("Radius must be positive");
+        }
+        this.center = center;
         this.radius = radius;
-        this.name=this.getClass().getName().toString();
     }
 
-    public String toString() {
-        return this.getClass().getSimpleName();
+    void setColor(String color) {
+        this.color = color;
+    }
+
+    String getColor() {
+        return color;
+    }
+
+    Point getCenter() {
+        return center;
+    }
+
+    int getRadius() {
+        return radius;
+    }
+
+    double square() {
+        return PI * pow(radius, 2);
     }
 }
