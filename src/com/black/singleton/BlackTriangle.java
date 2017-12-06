@@ -1,17 +1,18 @@
 package com.black.singleton;
 
-
-public class BlackTriangle extends Triangle {
-
-    public BlackTriangle(){
-    }
-    
-    public BlackTriangle(Point a, Point b, Point c) {
+class BlackTriangle extends Triangle {
+    BlackTriangle(Point a, Point b, Point c) {
         super(a, b, c);
     }
 
-//    @Override
-//    public String toString() {
-//        return "BlackTriangle";
-//    }
+    @Override
+    public String toString() {
+        return "Black triangle{" +
+                "a = " + getA() +
+                ", b = " + getB() +
+                ", c = " + getC() +
+                ", color = '" + getColor() + '\'' +
+                ", square = " + square() +
+                '}';
+    }
 }

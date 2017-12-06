@@ -1,15 +1,19 @@
 package com.black.singleton;
 
-
-public class BlackFactory extends BaseFactory {
-
-
-    public Circle createCircle(Point p, int radius) {
-        return new BlackCircle(p, radius);
+class BlackFactory extends BaseFactory {
+    BlackFactory(String color) {
+        super(color);
     }
 
-    @Override
-    public Triangle createTriangle(Point p1, Point p2, Point p3) {
-        return new BlackTriangle(p1, p2, p3);
+    Circle createCircle(Point center, int radius) {
+        BlackCircle circle = new BlackCircle(center, radius);
+        circle.setColor(getColor());
+        return circle;
+    }
+
+    Triangle createTriangle(Point a, Point b, Point c) {
+        BlackTriangle triangle = new BlackTriangle(a, b, c);
+        triangle.setColor(getColor());
+        return triangle;
     }
 }

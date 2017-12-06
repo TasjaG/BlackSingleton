@@ -1,7 +1,17 @@
 package com.black.singleton;
 
-public abstract class BaseFactory {
+abstract class BaseFactory {
+    private String color;
+
+    BaseFactory(String color) {
+        this.color = color;
+    }
+
+    String getColor() {
+        return color;
+    }
+
     abstract Circle createCircle(Point center, int radius);
 
-    abstract Triangle createTriangle(Point pointA, Point pointB, Point pointC);
+    abstract Triangle createTriangle(Point a, Point b, Point c);
 }
