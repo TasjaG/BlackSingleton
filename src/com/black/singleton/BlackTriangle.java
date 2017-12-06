@@ -2,6 +2,10 @@ package com.black.singleton;
 
 
 public class BlackTriangle extends Triangle {
+
+    public BlackTriangle(){
+    }
+    
     public BlackTriangle(Point a, Point b, Point c) {
         super(a, b, c);
     }
