@@ -4,6 +4,7 @@ public class Runner {
     public static void main(String[] args) {
         BaseFactory blackFactory = null;
         BaseFactory whiteFactory = null;
+
         try {
             blackFactory = AbstractFactory.getFactory("black");
             whiteFactory = AbstractFactory.getFactory("white");
