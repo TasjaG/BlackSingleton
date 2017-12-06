@@ -8,10 +8,10 @@ public class WhiteCircle extends Circle {
         super(centre, radius);
     }
 
-    @Override
-    public String toString() {
-        return "WhiteCircle";
-    }
+//    @Override
+//    public String toString() {
+//        return this.getClass().getName().toString();
+//    }
 
 }
 

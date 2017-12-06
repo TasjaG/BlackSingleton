@@ -6,8 +6,8 @@ public class BlackTriangle extends Triangle {
         super(a, b, c);
     }
 
-    @Override
-    public String toString() {
-        return "BlackTriangle";
-    }
+//    @Override
+//    public String toString() {
+//        return "BlackTriangle";
+//    }
 }
