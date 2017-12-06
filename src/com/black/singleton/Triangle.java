@@ -12,4 +12,8 @@ public abstract class Triangle {
         this.b = b;
         this.c = c;
     }
+
+    public String toString() {
+        return this.getClass().getSimpleName();
+    }
 }

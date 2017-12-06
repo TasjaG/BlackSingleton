@@ -9,8 +9,8 @@ public class WhiteTriangle extends Triangle {
         super(a, b, c);
     }
 
-    @Override
-    public String toString() {
-        return "WhiteTriangle";
-    }
+//    @Override
+//    public String toString() {
+//        return "WhiteTriangle";
+//    }
 }

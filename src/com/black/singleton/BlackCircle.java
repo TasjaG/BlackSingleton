@@ -6,8 +6,8 @@ public class BlackCircle extends Circle {
         super(a, radius);
     }
 
-    @Override
-    public String toString() {
-        return "BlackCircle";
-    }
+//    @Override
+//    public String toString() {
+//        return "BlackCircle";
+//    }
 }
