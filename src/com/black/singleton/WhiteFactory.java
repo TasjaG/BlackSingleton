@@ -1,19 +1,21 @@
 package com.black.singleton;
 
-class WhiteFactory extends BaseFactory {
-    WhiteFactory(String color) {
-        super(color);
+/**
+ * Created by Victoria on 05.12.2017.
+ */
+public class WhiteFactory extends BaseFactory {
+    @Override
+    Circle createCircle(Point p, int radius) {
+        return new WhiteCircle(p, radius);
     }
 
-    Circle createCircle(Point center, int radius) {
-        WhiteCircle circle = new WhiteCircle(center, radius);
-        circle.setColor(getColor());
-        return circle;
+    @Override
+    Triangle createTriangle(Point p1, Point p2, Point p3) {
+        return new WhiteTriangle(p1, p2, p3);
     }
 
-    Triangle createTriangle(Point a, Point b, Point c) {
-        WhiteTriangle triangle = new WhiteTriangle(a, b, c);
-        triangle.setColor(getColor());
-        return triangle;
+    @Override
+    public String toString() {
+        return "WhiteFactory";
     }
 }

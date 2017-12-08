@@ -1,17 +1,17 @@
 package com.black.singleton;
 
-class WhiteCircle extends Circle {
-    WhiteCircle(Point center, int radius) {
-        super(center, radius);
+
+public class WhiteCircle extends Circle {
+
+
+    public WhiteCircle(Point centre, int radius) {
+        super(centre, radius);
     }
 
-    @Override
-    public String toString() {
-        return "White circle{" +
-                "center = " + getCenter() +
-                ", radius = " + getRadius() +
-                ", color = '" + getColor() + '\'' +
-                ", square = " + square() +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return this.getClass().getName().toString();
+//    }
+
 }
+
