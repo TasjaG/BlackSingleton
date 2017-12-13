@@ -2,11 +2,11 @@ package com.black.singleton;
 
 public class AbstractFactory {
 
-    public static BaseFactory getFactory(String string) throws IllegalColorException {
+    public static BaseFactory getFactory(String factoryType) throws IllegalColorException {
 
-        if (string.equalsIgnoreCase("white"))
+        if (factoryType.equalsIgnoreCase("white"))
             return new WhiteFactory();
-        if (string.equalsIgnoreCase("black"))
+        if (factoryType.equalsIgnoreCase("black"))
             return new BlackFactory();
 
         // if neither white nor black
